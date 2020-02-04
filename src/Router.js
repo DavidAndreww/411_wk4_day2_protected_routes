@@ -14,6 +14,7 @@ const checkAuth = () => {
 // Check the cookies for a cookie called "loggedIn"
 
 const ProtectedRoute = ({ component: Component, ...rest }) => {
+    console.log(rest)
   return (
     <Route
       {...rest}
